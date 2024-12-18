@@ -1,0 +1,9 @@
+<resources>
+    <string name="default_web_client_id">YOUR_CLIENT_ID.apps.googleusercontent.com</string>
+    <string name="firebase_database_url">https://YOUR_PROJECT_ID.firebaseio.com</string>
+    <string name="gcm_defaultSenderId">YOUR_SENDER_ID</string>
+    <string name="google_api_key">AIzaSyCGNstI7vQ25xaJoeEwA5xkhx5JApbna</string>
+    <string name="google_app_id">1:37208798404:android:825be72c60a2cec90fc591</string>
+    <string name="google_crash_reporting_api_key">YOUR_CRASH_REPORTING_KEY</string>
+    <string name="project_id">stud-new</string>
+</resources>
