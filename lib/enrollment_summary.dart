@@ -25,7 +25,7 @@ class EnrollmentSummaryPage extends StatelessWidget {
         child: ListView(
           children: [
             const DrawerHeader(
-              decoration: BoxDecoration(color: Colors.purple),
+              decoration: BoxDecoration(color: Colors.blueGrey),
               child: Text(
                 'Student Information System',
                 style: TextStyle(color: Colors.white, fontSize: 20),
