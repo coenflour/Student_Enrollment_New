@@ -66,34 +66,45 @@ class EnrollmentSummaryPage extends StatelessWidget {
           }
 
           final userData = snapshot.data!.data() as Map<String, dynamic>;
-          return Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Text(
-                  'Name: ${userData['name']}\nStudent ID: ${userData['studentId']}\nTotal Credits: $totalCredits',
-                  style: const TextStyle(fontSize: 18),
+          return SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text(
+                    'Name: ${userData['name']}\nStudent ID: ${userData['studentId']}\nTotal Credits: $totalCredits',
+                    style: const TextStyle(fontSize: 18),
+                  ),
                 ),
-              ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16.0),
-                child: Text(
-                  'Here is the list of all subjects you have chosen for this semester:',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color:Colors.blue),
+                const Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text(
+                    'Here is the list of all subjects you have chosen for this semester:',
+                    style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue),
+                  ),
                 ),
-              ),
-              const SizedBox(height: 10),
-              Expanded(
-                child: Padding(
+                const SizedBox(height: 10),
+                Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: DataTable(
                     columnSpacing: 16.0,
                     columns: const [
-                      DataColumn(label: Text('No.', style: TextStyle(fontWeight: FontWeight.bold))),
-                      DataColumn(label: Text('Subject Name', style: TextStyle(fontWeight: FontWeight.bold))),
-                      DataColumn(label: Text('Code', style: TextStyle(fontWeight: FontWeight.bold))),
-                      DataColumn(label: Text('Credits', style: TextStyle(fontWeight: FontWeight.bold))),
+                      DataColumn(
+                          label: Text('No.',
+                              style: TextStyle(fontWeight: FontWeight.bold))),
+                      DataColumn(
+                          label: Text('Subject Name',
+                              style: TextStyle(fontWeight: FontWeight.bold))),
+                      DataColumn(
+                          label: Text('Code',
+                              style: TextStyle(fontWeight: FontWeight.bold))),
+                      DataColumn(
+                          label: Text('Credits',
+                              style: TextStyle(fontWeight: FontWeight.bold))),
                     ],
                     rows: subjects
                         .asMap()
@@ -109,8 +120,8 @@ class EnrollmentSummaryPage extends StatelessWidget {
                         .toList(),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           );
         },
       ),
