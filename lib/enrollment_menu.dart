@@ -71,7 +71,7 @@ class SelectSubjectPageState extends State<SelectSubjectPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Select Subjects'),
-        backgroundColor: Color.fromARGB(255, 92, 114, 255),
+        backgroundColor: const Color.fromARGB(255, 92, 114, 255),
       ),
       body: Column(
         children: [
