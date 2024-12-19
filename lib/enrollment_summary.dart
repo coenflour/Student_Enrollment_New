@@ -19,7 +19,7 @@ class EnrollmentSummaryPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Enrollment Summary'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: const Color.fromARGB(255, 92, 114, 255),
       ),
       drawer: Drawer(
         child: ListView(
