@@ -1,6 +1,6 @@
 # Student Enrollment App
 
-A new Flutter project.
+Android App Final Exam Project for subject Wireless and Mobile Programming built with Flutter.
 
 ## App Demo Video
 https://drive.google.com/file/d/1Rs8fc6xZGta97dAXZGS0VrQhR3ve7l-e/view?usp=sharing
